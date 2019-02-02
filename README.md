@@ -41,3 +41,11 @@ char: 1
 - nchar：大小写字母+数字
 - num：数字
 - sym：字符
+
+## 举个栗子
+
+[all-the-package-names](https://github.com/nice-registry/all-the-package-names) 是npm的离线数据库，
+
+根据icrunch生成的数据，如果不在all-the-package-names里，基本就是可用的包名称。
+
+黑客暴力破解字典，批量域名查询都是类似原理。
