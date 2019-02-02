@@ -48,4 +48,6 @@ char: 1
 
 根据icrunch生成的数据，如果不在all-the-package-names里，基本就是可用的包名称。
 
+当然也可以结合npm-name去线上查询。
+
 黑客暴力破解字典，批量域名查询都是类似原理。
