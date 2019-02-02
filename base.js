@@ -17,7 +17,7 @@ function permutate(opts, len) {
     return permutations;
 }
 
-module.exports = function (arr, min, max , callback) {
+module.exports = function (arr, min, max, callback) {
     if (!max) max = arr.length
     if (!min) min = 0
     if (!callback) callback = console.log
@@ -29,10 +29,15 @@ module.exports = function (arr, min, max , callback) {
     var res = []
     var index = 1
 
-    while(max--){
+    while (max--) {
         const a = permutate(arr, index++);
-        for(var i in a){
-            if(a[i].length >= min)callback(a[i].join(''))
+        for(var i in a) {
+            if(a[i].length >= min){
+                let name = a[i].join('')
+                res.push(name)
+                callback(name)
+            }
         }
     }
+    return res;
 }

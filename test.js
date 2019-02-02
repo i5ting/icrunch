@@ -16,6 +16,11 @@ const i = require('./')
 
 // i.custom(['a','n','1'], 2,2)
 
-i.custom(['a','n','1'], 1 , 1 ,function(char){
-    console.log('char: ' + char)
-})
+// i.custom(['a','n','1'], 1 , 1 ,function(char){
+//     console.log('char: ' + char)
+// })
+
+const res = i.low(2,2)
+for (var a in res){
+    console.log(res[a])
+}
